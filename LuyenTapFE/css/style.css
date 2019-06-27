@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-indicators li {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.overlay-banner {
+    bottom: 0px;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 40%;
+    background-image: linear-gradient(to top, rgb(23, 21, 42), rgba(8, 55, 36, 0.0));
+}
+
+.all-product {
+    margin-left: 40px;
+}
+
+.product {
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.product img {
+    padding: 30px;
+}
+.overlay-product
+{
+    top: 35.5% ;
+    left: 27.5%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    opacity: 0;
+    transition:  all 0.5s;
+}
+.product:hover .overlay-product
+{
+    opacity: 1;
+    transform: scale(2.2,3.5);
+    transition: all 1s;
+}
+.btn-Cart
+{
+    
+    position: absolute;
+   
+    bottom:0;
+    opacity: 0;
+}
+.product:hover .btn-Cart
+{
+    transition: all 0.85s;
+   
+    left: 27%;
+    bottom:40%;
+    opacity: 1;
+}
+
+.line2 span
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    
+}
+/* repon */
+@media only screen and (max-width:1200px) {
+    .all-product {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .all-product {
+        margin-left: 65px;
+    }
+    .product{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .all-product {
+        margin-left: 100px;
+    }
+    .product{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width:550px) {
+    .all-product {
+        margin-left: 40px;
+    }
+    
+}
+@media only screen and (max-width:410px) {
+    .all-product {
+        margin-left: 5px;
+    }
+}

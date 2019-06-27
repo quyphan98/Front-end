@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    width: 100%;
+    height: 200px;
+}
+
+.navbar-brand img
+{
+   width: 5rem; 
+}
+.nav-item a 
+{
+    color: white !important;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: all 0.3s;
+    
+}
+
+.item img
+{
+    width: 100%;
+    
+}
+.nav-item:hover a
+{
+    color: #009A9A!important;
+    border-bottom: 4px 100px solid #009A9A!important;
+    transition: all 0.3s;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #009A9A!important;
+}
+.header-scroll{
+    background-color:white;
+    border-bottom:3px solid #009A9A;
+} 
+.intro
+{
+    width: 100%;
+    height: 100px;
+}
+.mymenu
+{
+    z-index: 1;
+    position: fixed!important;
+    width: 100%;
+}
+.line
+{
+    width: 0;
+    height: 4px;
+    background-color: #009A9A;
+
+}
+.nav-item:hover .line
+{
+    transition: all 0.5s;
+    width: 100%;
+}
+.carousel-caption
+{
+    top:40%;
+}
+.search
+{
+    position: relative;
+    margin-left: 320px;
+}
+.form-control 
+{
+    width: 55% !important;
+   
+}
+.btn-info
+{
+    position: absolute;
+    top:0 !important;
+    border-radius: 0 !important;
+}
+.item img
+{
+    width: 10rem !important;
+}
+.item span
+{
+    margin-left: 65px;
+    color: black;
+}
+.quy
+{
+    margin-left: 500px;
+}

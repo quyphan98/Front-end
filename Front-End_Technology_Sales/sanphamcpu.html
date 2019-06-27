@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <link href='//fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+    <link
+        href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="head">
+
+        <button type="button" class="btn-popup btn btn-primary" data-toggle="modal"
+            data-target=".bd-example-modal-lg">Tài
+            khoản</button>
+        <div class="icon-person">
+            <i class="fa fa-user-circle"></i>
+
+        </div>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content p-5">
+                    <div class="container">
+                        <h2 class="text-center">Đăng nhập | Đăng ký</h2>
+                        <br>
+                        <!-- Nav pills -->
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link  active" data-toggle="pill" href="#home">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="pill" href="#menu1">Đăng ký</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="home" class="container tab-pane active"><br>
+                                <h3>Đăng nhập</h3>
+                                <form action="/action_page.php">
+                                    <div class="form-group">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btntabdn">Đăng nhập</button>
+                                </form>
+                            </div>
+                            <div id="menu1" class="container tab-pane fade"><br>
+                                <h3>Đăng ký</h3>
+                                <form action="/action_page.php">
+                                    <div class="form-group">
+                                        <label for="email">Tên tài khoản</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Mật khẩu</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Họ và tên</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Email</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Số điện thoại</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+
+                                    <button type="submit" class="btn btntabdn">Đăng ký</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section id="all">
+
+        <div class="contai">
+            <nav class="navbar navbar-expand-sm">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+
+                <!-- Links -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="icon-toggle fa fa-align-left"></i>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse py-2" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Sản Phẩm
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./sanphamlaptop.html">LapTop</a>
+                                <a class="dropdown-item" href="#">Main</a>
+                                <a class="dropdown-item" href="#">Điện Thoại</a>
+                                <a class="dropdown-item" href="#">CPU</a>
+                                <a class="dropdown-item" href="#">Card Màn Hình</a>
+                                <a class="dropdown-item" href="#">Case</a>
+                                <a class="dropdown-item" href="#">Màn Hình</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên Hệ</a>
+                        </li>
+
+                    </ul>
+                    <div class="search-head m-2 input-group mb-2 m-auto">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append">
+                            <button class="btn-search btn" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ Hàng</span>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </section>
+    <section class="carousel">
+        <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="mx-auto d-block" src="./images/banner1.png" alt="Los Angeles" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner2.jpg" alt="Los Angeles" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner3.jpg" alt="Los Angeles" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner4.jpg" alt="Los Angeles" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner5.png" alt="Los Angeles" />
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <section class="contai pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text">
+                        <marquee><span>Chào Mừng Bạn Đến Với AORUS</span></marquee>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sp-so">
+        <div class="container">
+            <div class="row sp-title">
+                <div class="sp-gs col-sm-12 mt-4">
+                    <i class="fa fa-chevron-circle-right text-white mt-3"></i>
+                    <h5 class="texttitle ml-5 text-white">CPU</h5>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/card1.jpg" alt="">
+                        <p class="text-center">Card RTX520</p>
+                        <span>4.204.000đ</span>
+                        <strike class="sale-off pl-5">5.800.000đ</strike></br>
+                        <div class="review mt-3">
+
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(270 đánh giá)</span>
+                        </div>
+
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/ram2.jpg" alt="">
+                        <p class="text-center">Card DDR4</p>
+                        <span>2.200.000đ</span>
+                        <strike class="sale-off pl-5">3.000.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                            <span>(20 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/case1.jpg" alt="">
+                        <p class="text-center">Case</p>
+                        <span>1.434.000đ</span>
+                        <strike class="sale-off pl-5">2.100.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/mh8.jpg" alt="">
+                        <p class="text-center">Màn Hình Asus</p>
+                        <span>2.434.000đ</span>
+                        <strike class="sale-off pl-5">2.800.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row mt-4">
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/card1.jpg" alt="">
+                        <p class="text-center">Card RTX520</p>
+                        <span>4.204.000đ</span>
+                        <strike class="sale-off pl-5">5.800.000đ</strike></br>
+                        <div class="review mt-3">
+
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(270 đánh giá)</span>
+                        </div>
+
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/ram2.jpg" alt="">
+                        <p class="text-center">Card DDR4</p>
+                        <span>2.200.000đ</span>
+                        <strike class="sale-off pl-5">3.000.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                            <span>(20 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/case1.jpg" alt="">
+                        <p class="text-center">Case</p>
+                        <span>1.434.000đ</span>
+                        <strike class="sale-off pl-5">2.100.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/mh8.jpg" alt="">
+                        <p class="text-center">Màn Hình Asus</p>
+                        <span>2.434.000đ</span>
+                        <strike class="sale-off pl-5">2.800.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+
+            <div class="row mt-4">
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/card1.jpg" alt="">
+                        <p class="text-center">Card RTX520</p>
+                        <span>4.204.000đ</span>
+                        <strike class="sale-off pl-5">5.800.000đ</strike></br>
+                        <div class="review mt-3">
+
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(270 đánh giá)</span>
+                        </div>
+
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/ram2.jpg" alt="">
+                        <p class="text-center">Card DDR4</p>
+                        <span>2.200.000đ</span>
+                        <strike class="sale-off pl-5">3.000.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                            <span>(20 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/case1.jpg" alt="">
+                        <p class="text-center">Case</p>
+                        <span>1.434.000đ</span>
+                        <strike class="sale-off pl-5">2.100.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/mh8.jpg" alt="">
+                        <p class="text-center">Màn Hình Asus</p>
+                        <span>2.434.000đ</span>
+                        <strike class="sale-off pl-5">2.800.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="qc">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="qc1 col-sm-4">
+                    <img class="w-100" src="/images/45.jpg" alt="">
+                    <i class="play1 far fa-play-circle" data-toggle="modal" data-target="#myModal"></i>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="vd modal-dialog">
+                            <div class="modal-content w-100">
+
+                                <iframe width="1000" height="600" src="https://www.youtube.com/embed/tA9nCNTNodU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="qc1 col-sm-4">
+                    <img class="qc2 w-100" src="/images/46.jpg" height="100%" alt="">
+                    <div class="overlayqc"></div>
+                    <i class="play1 far fa-play-circle" data-toggle="modal" data-target="#myModal"></i>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="vd modal-dialog">
+                            <div class="modal-content w-100">
+
+                                <iframe width="1000" height="600" src="https://www.youtube.com/embed/tA9nCNTNodU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qc1 col-sm-4">
+                    <img class="w-100" src="/images/49.jpg" alt="">
+                    <i class="play1 far fa-play-circle" data-toggle="modal" data-target="#myModal"></i>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="vd modal-dialog">
+                            <div class="modal-content w-100">
+
+                                <iframe width="1000" height="600" src="https://www.youtube.com/embed/tA9nCNTNodU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-so">
+        <div class="container">
+            <div class="row sp-title">
+                <div class="sp-gs col-sm-12 mt-4">
+                    <i class="fa fa-chevron-circle-right text-white mt-3"></i>
+                    <h5 class="texttitle ml-5 text-white">HÀNG MỚI VỀ</h5>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/card1.jpg" alt="">
+                        <p class="text-center">Card RTX520</p>
+                        <span>4.204.000đ</span>
+                        <strike class="sale-off pl-5">5.800.000đ</strike></br>
+                        <div class="review mt-3">
+
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(270 đánh giá)</span>
+                        </div>
+
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/ram2.jpg" alt="">
+                        <p class="text-center">Card DDR4</p>
+                        <span>2.200.000đ</span>
+                        <strike class="sale-off pl-5">3.000.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                            <span>(20 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="fiximg mx-auto d-block mt-4" src="./images/case1.jpg" alt="">
+                        <p class="text-center">Case</p>
+                        <span>1.434.000đ</span>
+                        <strike class="sale-off pl-5">2.100.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mr-auto">
+                    <div class="sp-demo">
+                        <img class="mx-auto d-block" src="./images/mh8.jpg" alt="">
+                        <p class="text-center">Màn Hình Asus</p>
+                        <span>2.434.000đ</span>
+                        <strike class="sale-off pl-5">2.800.000đ</strike></br>
+                        <div class="review mt-3">
+                            <i class="start far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <span>(0 đánh giá)</span>
+                        </div>
+                        <div class="overlay">
+                            <button type="button" class="btn-ct btn btn-primary">Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="w-100 bg-danger" style="height: 1px;">
+    <section class="container">
+        <div class="row py-4">
+            <div class="col-sm-12">
+                <iframe class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.178358006192!2d106.65379951480102!3d10.797647792307124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529343ba430cb%3A0xb6aeea274dc8469a!2zMzkwIEhvw6BuZyBWxINuIFRo4bulLCBQaMaw4budbmcgNCwgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1553068037554"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="container pb-5">
+        <div class="row">
+            <div class="col-sm-3 d-flex mx-auto">
+                <i class="vchuyen fas fa-shipping-fast"></i>
+                <span class="textspan">MIỄN PHÍ VẬN CHUYỂN
+                </span>
+            </div>
+            <div class="col-sm-3 d-flex mx-auto">
+                <i class="vchuyen fas fa-shield-alt"></i>
+                <span class="textspan">THANH TOÁN BẢO MẬT
+                </span>
+            </div>
+            <div class="col-sm-3 d-flex mx-auto">
+                <i class="vchuyen fas fa-headset"></i>
+                <span class="textspan">HỔ TRỢ 24/7
+                </span>
+            </div>
+            <div class="col-sm-3 mx-auto "><span class="lh text-center">LIÊN HỆ VỚI CHÚNG TÔI</span></br>
+                <i class="icon1 fab fa-facebook-square pt-2 pr-2 flex-column">
+
+                    <span class="textspan1 pl-4">AORUS VIỆT NAM</span>
+
+                </i>
+                <i class="icon2 fab fa-instagram text-dark pr-2">
+                    <span class="textspan1 pl-4">AORUS VIỆT NAM</span>
+                </i>
+                <i class="icon3 fab fa-viber pr-2">
+                    <span class="textspan1 pl-4">LH: 098.754.7129</span>
+                </i>
+                <i class="icon4 far fa-envelope">
+                    <span class="textspan1 pl-4">aorusvn@vl.com</span>
+                </i>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="w-50 float-right" src="./images/logo.jpg" alt="">
+                </div>
+                <div class="col-sm-6 float-right pt-5">
+                    <h3>© 2018 All Right Reserved By AORUS</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="cd-top">Back To Top</a>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script src="./js/main.js"></script>
+
+</html>
+
+<script>
+    jQuery(document).ready(function ($) {
+        // browser window scroll (in pixels) after which the "back to top" link is shown
+        var offset = 100,
+            //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+            offset_opacity = 1200,
+            //duration of the top scrolling animation (in ms)
+            scroll_top_duration = 700,
+            //grab the "back to top" link
+            $back_to_top = $('.cd-top');
+
+        //hide or show the "back to top" link
+        $(window).scroll(function () {
+            ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top
+                .removeClass(
+                    'cd-is-visible cd-fade-out');
+            if ($(this).scrollTop() > offset_opacity) {
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+
+        //smooth scroll to top
+        $back_to_top.on('click', function (event) {
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0,
+            }, scroll_top_duration);
+        });
+
+    });
+</script>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+    var navbar = document.getElementById("all");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>

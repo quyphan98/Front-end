@@ -1,0 +1,259 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+.header
+{
+    width: 100%;
+    
+}
+.logoL img
+{
+    float: left;
+    margin-left: 10px
+}
+.logoR img
+{
+    float: right;
+    margin-right: 30px;
+}
+.menu 
+{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.menu ul 
+{
+    display: flex;
+    padding:20px;
+    margin: auto;
+}
+.menu ul li
+{
+    margin: 20px 50px 0 0;
+    list-style: none;
+}
+.menu ul li a
+{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.menu ul li a:hover
+{
+    color: red;
+}
+.big-logo
+{
+    background-image: url('../images/slider_1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.cont
+{
+    width: 100%;
+    margin-top: 50px;
+}
+.cont h1
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.cont .line
+{
+    width: 60%;
+    margin: auto;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.cont .text
+{
+    text-align: center;
+    padding: 20px 0 0 0;
+    width: 70%;
+    margin: auto;
+}
+.cont-program
+{
+    display: flex;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    
+}
+.cont-program1
+{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.cont-program1 p
+{
+    margin-top:20px;
+}
+.cont-program1 img
+{
+    width: 100%;
+    height: 100%;
+}
+.cont-program2
+{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.cont-program2 p
+{
+    margin-top:20px;
+}
+.cont-program2 img
+{
+    width: 100%;
+    height: 100%;
+}
+.cont-program3
+{
+    grid-column: 3/4;
+    grid-row: 1;
+}
+.cont-program3 p
+{
+    margin-top:20px;
+}
+.cont-program3 img
+{
+    width: 100%;
+    height: 100%;
+}
+.cont-program4
+{
+    grid-column: 4;
+    grid-row: 1;
+}
+.cont-program4 p
+{
+    margin-top:20px;
+}
+.cont-program4 img
+{
+    width: 100%;
+    height: 100%;
+}
+.banner-new
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+h1
+{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.line
+{
+    width: 60%;
+    margin: auto;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.banner-new1
+{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    position: relative;
+}
+
+.banner-new1 img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.new1
+{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top:57%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-new2
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.banner-new2 img
+{
+    width: 100%;
+    height: 300px;
+}
+.banner-new2  .thanhmo1
+{
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 3px;
+}
+.banner-new3
+{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.banner-new3 img
+{
+    width: 100%;
+    height: 100%;
+}
+.banner-new4
+{
+    grid-column: 3/4;
+    grid-row: 2;
+}
+.banner-new4 img
+{
+    width: 100%;
+    height: 100%;
+}
+.banner-new5
+{
+    grid-column: 4/5;
+    grid-row: 2;
+}
+.banner-new5 img
+{
+    width: 100%;
+    height: 100%;
+}
+.box-parent
+{
+    position: relative;
+}
+.thanhmo1
+{
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 3px;
+}
